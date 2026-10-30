@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>在宅ワークチャレンジプログラム｜沖縄県ひとり親家庭等在宅就業推進事業</title>
-<meta name="description" content="沖縄県内在住のひとり親家庭を対象に、在宅ワークで収入アップを目指す無料プログラム。参加費無料・定員30名。">
+<meta name="description" content="沖縄県ひとり親家庭等在宅就業推進事業（在宅ワークチャレンジプログラム）の公式サイト。企業様向け講演会（サイボウズ株式会社 社長 青野慶久氏）のご案内と、在宅ワーク案件をご提供いただける登録企業の募集。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -389,6 +388,129 @@
     .hero-photo-frame:hover, .lead-photo-frame:hover { transform: none !important; }
     html { scroll-behavior: auto !important; }
   }
+
+  /* ---------- 2026-10 追加：講演会・企業登録 ---------- */
+  [hidden] { display: none !important; }
+  .hero h1.seminar-h1 { font-size: clamp(28px, 4.2vw, 40px); }
+  .hero .theme-sub { display: block; font-size: 15px; font-weight: 700; color: var(--teal-700); margin-top: 8px; line-height: 1.6; }
+  .hero-speaker { font-family: var(--font-display); font-weight: 700; color: var(--ink); font-size: 16px; margin-bottom: 6px; }
+  .hero-date { font-family: var(--font-display); font-weight: 900; color: var(--teal-900); font-size: clamp(18px, 2.6vw, 22px); margin-bottom: 24px; line-height: 1.5; }
+  .hero-date small { font-size: .6em; font-weight: 700; color: var(--ink-soft); }
+  .btn-pink {
+    font-family: var(--font-display); font-weight: 700; font-size: 17px;
+    background: var(--pink-600); color: #fff; text-decoration: none;
+    padding: 16px 36px; border-radius: 999px; display: inline-block;
+    box-shadow: 0 5px 0 #A8395F, 0 10px 20px rgba(168,57,95,.2);
+    transition: transform .12s ease;
+  }
+  .btn-pink:hover { transform: translateY(-1px); }
+  .btn-pink:active { transform: translateY(3px); box-shadow: 0 2px 0 #A8395F; }
+  .closed-label {
+    display: inline-block; font-family: var(--font-display); font-weight: 700; font-size: 15px;
+    background: var(--line); color: var(--ink-soft); padding: 12px 28px; border-radius: 999px;
+  }
+
+  /* 講演会詳細 */
+  .seminar-card {
+    background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-md);
+    padding: 32px 28px; box-shadow: 0 2px 8px rgba(11,92,70,.05);
+  }
+  .seminar-theme { font-family: var(--font-display); font-weight: 900; font-size: clamp(22px, 4vw, 28px); color: var(--teal-900); margin-bottom: 4px; }
+  .seminar-theme-sub { font-weight: 700; color: var(--teal-700); margin-bottom: 24px; }
+  .info-table { width: 100%; border-collapse: collapse; font-size: 15px; margin-bottom: 24px; }
+  .info-table th, .info-table td { text-align: left; vertical-align: top; padding: 14px 8px; border-bottom: 1px solid var(--line); }
+  .info-table th { width: 7em; font-family: var(--font-display); color: var(--teal-900); white-space: nowrap; }
+  .info-table td small { display: block; font-size: 13px; color: var(--ink-soft); }
+  .info-table a { color: var(--teal-700); }
+  .schedule-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 0 0 28px; padding: 0; list-style: none; }
+  @media (max-width: 640px) { .schedule-list { grid-template-columns: 1fr; } }
+  .schedule-list li { background: var(--teal-50); border-radius: var(--radius-md); padding: 16px 18px; }
+  .schedule-list .part { font-size: 13px; color: var(--teal-700); font-weight: 700; }
+  .schedule-list .what { font-family: var(--font-display); font-weight: 700; color: var(--teal-900); font-size: 16px; }
+  .invite-note { font-size: 13.5px; color: var(--ink-soft); background: var(--pink-100); border-radius: 12px; padding: 14px 18px; margin-bottom: 28px; }
+  .speaker-box { display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: start; margin-top: 8px; }
+  @media (max-width: 600px) { .speaker-box { grid-template-columns: 1fr; } }
+  .speaker-box img { border-radius: 16px; aspect-ratio: 1/1; object-fit: cover; object-position: 50% 20%; width: 100%; }
+  .speaker-box h3 { font-size: 17px; color: var(--teal-900); margin-bottom: 2px; }
+  .speaker-box .role { font-size: 13px; color: var(--ink-soft); margin-bottom: 10px; }
+  .speaker-box p.profile { font-size: 14px; color: var(--ink-soft); margin: 0; }
+  .center-cta { text-align: center; margin-top: 32px; }
+  .center-cta .deadline { display: block; font-size: 14px; color: var(--ink-soft); margin-top: 14px; }
+
+  /* 企業登録 */
+  .company-section { background: var(--paper); }
+  .company-lead { font-size: 18px; font-weight: 700; color: var(--teal-900); margin-bottom: 18px; }
+  .company-lead mark { background: linear-gradient(transparent 55%, #FFF0A8 55%); color: inherit; }
+  .text-box { border: 2px solid var(--teal-100); border-radius: var(--radius-md); padding: 20px 22px; font-size: 15px; margin-bottom: 32px; background: var(--paper); }
+  .cycle-grid { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 12px; align-items: center; margin-bottom: 18px; }
+  @media (max-width: 880px) { .cycle-grid { grid-template-columns: 1fr; gap: 8px; } }
+  .cycle-item { background: var(--teal-50); border-radius: var(--radius-md); padding: 18px 16px; text-align: center; font-size: 14.5px; font-weight: 700; color: var(--teal-900); }
+  .cycle-plus {
+    justify-self: center; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--pink-600); color: #fff; display: flex; align-items: center; justify-content: center;
+    font-size: 22px; font-weight: 700; line-height: 1;
+  }
+  .ask-text { text-align: center; color: var(--pink-600); font-weight: 700; font-size: 15.5px; margin-bottom: 48px; }
+  h3.sub-title { font-size: 20px; color: var(--teal-900); margin-bottom: 18px; text-align: center; }
+  .flow-grid { display: grid; grid-template-columns: 1fr 1.25fr 1.5fr 1.25fr 1fr; gap: 10px; align-items: center; margin-bottom: 18px; }
+  .flow-node { background: var(--teal-700); color: #fff; border-radius: var(--radius-md); padding: 18px 12px; text-align: center; font-family: var(--font-display); font-weight: 700; font-size: 15px; line-height: 1.5; }
+  .flow-node small { display: block; font-size: 12px; font-weight: 500; color: var(--teal-100); }
+  .flow-node.mid { background: var(--teal-900); }
+  .flow-node .inspect { display: inline-block; margin-top: 6px; font-size: 12px; background: #fff; color: var(--teal-900); border-radius: 999px; padding: 1px 12px; }
+  .flow-link { display: flex; flex-direction: column; gap: 10px; }
+  .lane { display: flex; flex-direction: column; align-items: center; text-align: center; font-size: 12.5px; line-height: 1.6; }
+  .lane.go { color: var(--ink-soft); }
+  .lane.back { color: var(--pink-600); font-weight: 700; }
+  .lane .arw-h { width: 100%; max-width: 130px; height: 14px; }
+  .lane .arw-v { display: none; width: 14px; height: 40px; flex: none; }
+  .lane.go svg { color: var(--teal-500); }
+  .lane.back svg { color: var(--pink-600); }
+  @media (max-width: 760px) {
+    .flow-grid { grid-template-columns: 1fr; gap: 6px; }
+    .flow-link { flex-direction: row; justify-content: center; align-items: center; gap: 36px; padding: 6px 0; }
+    .lane { flex-direction: row; gap: 10px; text-align: left; }
+    .lane .arw-h { display: none; }
+    .lane .arw-v { display: block; }
+  }
+  .period-box { display: flex; gap: 16px; align-items: center; background: #FFF6D6; border-radius: var(--radius-md); padding: 18px 22px; margin: 28px 0 48px; font-size: 15px; }
+  .period-box .tag { flex: none; font-family: var(--font-display); font-weight: 700; background: #F2B630; color: #fff; border-radius: 999px; padding: 8px 14px; font-size: 13px; }
+  .merit-head { text-align: center; background: var(--pink-600); color: #fff; font-family: var(--font-display); font-weight: 700; font-size: clamp(16px, 3vw, 20px); border-radius: 999px; padding: 12px 20px; margin-bottom: 18px; }
+  .task-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0 18px; padding: 0; list-style: none; }
+  @media (max-width: 700px) { .task-grid { grid-template-columns: repeat(2, 1fr); } }
+  .task-grid li { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 16px 10px; text-align: center; font-size: 13.5px; font-weight: 700; color: var(--teal-900); line-height: 1.5; }
+  .task-grid svg { display: block; margin: 0 auto 8px; color: var(--teal-500); }
+  .safe-text { text-align: center; color: var(--pink-600); font-family: var(--font-display); font-weight: 700; font-size: 18px; margin: 8px 0 0; }
+
+
+  /* ---------- 2026-10 表示崩れ対策 ---------- */
+  .nw { white-space: nowrap; }
+  h1, h2, h3, .company-lead, .cycle-item, .task-grid li, .ask-text, .merit-head, .safe-text, .flow-node, .seminar-theme, .seminar-theme-sub, .theme-sub, .news-title { word-break: auto-phrase; }
+  .section-title .sub { display: block; font-size: .62em; color: var(--teal-700); margin-top: 4px; }
+  @media (max-width: 640px) {
+    .logo { font-size: 13px; }
+    .logo span { font-size: 10px; }
+    header.site-header .btn-apply { display: none; }
+    .info-table th { width: 4.5em; padding: 12px 4px; }
+    .info-table td { padding: 12px 4px; }
+    .period-box { flex-direction: column; align-items: flex-start; }
+    .task-grid li { font-size: 12.5px; padding: 14px 6px; }
+    .speaker-box img { max-width: 220px; }
+  }
+  .center-cta .btn-primary, .center-cta .btn-pink { display: inline-block; max-width: 100%; }
+  @media (max-width: 640px) {
+    .center-cta .btn-primary, .center-cta .btn-pink { font-size: 15.5px; padding: 15px 24px; }
+  }
+  /* チラシをトップに表示 */
+  .hero-inner.hero-flyer { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr); gap: 44px; align-items: center; }
+  @media (max-width: 760px) { .hero-inner.hero-flyer { grid-template-columns: 1fr; gap: 28px; } }
+  .flyer-frame { display: block; border-radius: 10px; overflow: hidden; background: #fff;
+    box-shadow: 0 18px 36px rgba(11,92,70,.20); border: 1px solid var(--line); transition: transform .3s ease; }
+  .flyer-frame:hover { transform: translateY(-3px); }
+  .flyer-frame img { width: 100%; height: auto; }
+  @media (max-width: 760px) { .flyer-frame { max-width: 480px; margin: 0 auto; width: 100%; } }
+  .hero-links { margin-top: 18px; font-size: 14px; }
+  .hero-links a { color: var(--teal-700); font-weight: 700; margin-right: 14px; display: inline-block; }
+  .ended-note { background: var(--teal-50); border-left: 4px solid var(--teal-500); border-radius: 8px; padding: 14px 18px; font-size: 14px; color: var(--teal-900); margin-bottom: 28px; }
 </style>
 </head>
 <body>
@@ -398,40 +520,61 @@
 <header class="site-header">
   <div class="header-inner">
     <div class="logo">在宅ワークチャレンジプログラム<span>沖縄県ひとり親家庭等在宅就業推進事業</span></div>
-    <a class="btn-apply" href="#apply-flow" aria-label="応募・申込のセクションへ移動">申込へ進む</a>
+    <a class="btn-apply" href="#seminar" data-when="open">講演会に申し込む</a>
+    <a class="btn-apply" href="#company" data-when="closed" hidden>企業登録のご案内</a>
   </div>
 </header>
 
 <main id="main">
 
-  <!-- ===== 1. Hero ===== -->
+  <!-- ===== 1. Hero（講演会受付中：〜11/11） ===== -->
   <section class="hero">
     <div class="hero-blob b1" aria-hidden="true"></div>
     <div class="hero-blob b2" aria-hidden="true"></div>
-    <div class="wrap hero-inner">
+
+    <div class="wrap hero-inner hero-flyer" data-when="open">
+      <a class="flyer-frame" href="files/flyer-kigyou-seminar-2026.pdf" target="_blank" rel="noopener" data-reveal>
+        <img src="images/flyer-seminar-1.jpg" width="1100" height="1556"
+             alt="チラシ：サイボウズ株式会社 社長 青野慶久氏 講演会「個人戦からチーム戦へ ～情報共有と『5つの文化』でつくる、多様な人材が活躍する組織～」。2026年11月26日（木）14:00〜17:00（13:30開場）、八汐荘 屋良ホール、定員90名、参加無料、お申込み締切11/11（水）。">
+      </a>
       <div class="hero-text" data-reveal>
         <div class="hero-badges">
-          <span class="badge">参加費 無料</span>
-          <span class="badge">定員 30名</span>
-          <span class="badge pink">令和8年度 沖縄県事業</span>
+          <span class="badge pink">参加無料</span>
+          <span class="badge">定員 90名</span>
+          <span class="badge">令和8年度 沖縄県事業</span>
         </div>
-        <h1><small>参加者募集／ひとり親家庭を支援！！</small>在宅ワークチャレンジプログラム</h1>
-        <p class="hero-lead">
-          自宅にいながら、自分のペースでスキルを身につけ、実際の仕事にチャレンジできる。
-          子どもと過ごす時間を大切にしながら、収入を増やす道を一緒に探していくプログラムです。
-        </p>
+        <h1 class="seminar-h1"><small>企業様向け講演会のご案内</small><span class="nw">サイボウズ株式会社 社長</span><br><span class="nw">青野 慶久氏 講演会</span></h1>
+        <p class="hero-date"><span class="nw">2026年11月26日（木）</span><span class="nw">14:00〜17:00</span> <small class="nw">（13:30開場）</small><br><small>八汐荘 屋良ホール（那覇市松尾1丁目6-1）</small></p>
         <div class="hero-cta-row">
-          <a class="btn-primary" href="https://forms.gle/Rr7BTu5ibqY3Eizy9" target="_blank" rel="noopener">
-            <!-- ▼ Googleフォームの実URLに差し替えてください -->
-            申込面談を予約する
-          </a>
-          <p class="hero-period">申込期間　<strong>2026年8月7日（金）〜9月18日（金）</strong></p>
+          <a class="btn-pink" href="https://forms.gle/MdEfVedjQGkj5YuMA" target="_blank" rel="noopener">講演会に申し込む</a>
+          <p class="hero-period">お申込み締切　<strong>11/11（水）まで</strong></p>
         </div>
-      </div>
-      <div class="hero-photo-frame" data-reveal>
-        <img src="images/hero-photo-01.jpg" alt="在宅で子どもと過ごしながらタブレットを使って仕事をする様子">
+        <p class="hero-links"><a href="#seminar">講演会の詳細を見る</a>　<a href="files/flyer-kigyou-seminar-2026.pdf" target="_blank" rel="noopener">チラシ（PDF）を開く</a></p>
       </div>
     </div>
+
+    <!-- ===== 1'. Hero（講演会受付終了後：11/12〜 自動切替） ===== -->
+    <div class="wrap hero-inner hero-flyer" data-when="closed" hidden>
+      <a class="flyer-frame" href="files/flyer-kigyou-seminar-2026.pdf" target="_blank" rel="noopener" data-reveal>
+        <img src="images/flyer-seminar-2.jpg" width="1100" height="1556"
+             alt="チラシ：ひとり親家庭等在宅就業推進事業へ登録していただける企業を募集しています。案件の受注期間は2026年10月〜2027年2月末まで随時受付。">
+      </a>
+      <div class="hero-text" data-reveal>
+        <div class="hero-badges">
+          <span class="badge">案件受付 2026年10月〜2027年2月末</span>
+          <span class="badge pink">令和8年度 沖縄県事業</span>
+        </div>
+        <h1 class="seminar-h1"><small>企業の皆様へ</small>在宅ワーク案件をご提供いただける企業様を募集しています</h1>
+        <p class="hero-lead">
+          沖縄県のひとり親家庭の収入アップを副業の形でサポートする事業です。
+          社内にある在宅・PCでできる業務を切り分けいただき、当事業へ案件提供（業務委託）いただける企業様へご登録をお願いしております。
+        </p>
+        <div class="hero-cta-row">
+          <a class="btn-primary" href="#company">企業登録について詳しく見る</a>
+        </div>
+      </div>
+    </div>
+
     <div class="wave-divider at-bottom" aria-hidden="true">
       <svg viewBox="0 0 1440 44" preserveAspectRatio="none"><path d="M0,22 C240,44 480,0 720,14 C960,28 1200,40 1440,18 L1440,44 L0,44 Z" fill="var(--paper)"/></svg>
     </div>
@@ -446,13 +589,13 @@
       </div>
       <div class="news-list news-list--compact" data-reveal>
         <!-- 新着情報は日付が新しい順に、この形式で最新3件のみ表示してください（4件目以降は下の一覧ページへ） -->
+        <a class="news-row" href="news/2026-10-30-kouenkai-uketsuke.html">
+          <span class="news-date">2026-10-30</span>
+          <span class="news-title">企業様向け講演会（サイボウズ株式会社 社長 青野慶久氏）のお申込み受付を開始しました</span>
+        </a>
         <a class="news-row" href="news/2026-08-10-hp-koukai.html">
           <span class="news-date">2026-08-10</span>
           <span class="news-title">HPを公開しました</span>
-        </a>
-        <a class="news-row" href="news/2026-08-05-setsumeikai-tsuika.html">
-          <span class="news-date">2026-08-05</span>
-          <span class="news-title">オンライン説明会の日程を追加しました</span>
         </a>
         <a class="news-row" href="news/2026-08-07-uketsuke-kaishi.html">
           <span class="news-date">2026-08-07</span>
@@ -468,11 +611,119 @@
     </div>
   </section>
 
-  <!-- ===== 2. Lead (共感導入) ===== -->
-  <section aria-labelledby="lead-title">
+  <!-- ===== 2. 講演会のご案内 ===== -->
+  <section id="seminar" aria-labelledby="seminar-title">
+    <div class="wrap">
+      <span class="eyebrow">SEMINAR</span>
+      <h2 id="seminar-title" class="section-title"><span class="nw">サイボウズ株式会社</span> <span class="nw">社長</span> <span class="nw">青野 慶久氏</span> <span class="nw">講演会</span></h2>
+      <div class="seminar-card" data-reveal>
+        <p class="seminar-theme">個人戦からチーム戦へ</p>
+        <p class="seminar-theme-sub">～情報共有と「5つの文化」でつくる、多様な人材が活躍する組織～</p>
+
+        <table class="info-table">
+          <tr><th scope="row">日時</th><td><span class="nw">2026年11月26日（木）</span><span class="nw">14:00〜17:00</span><span class="nw">（13:30開場）</span></td></tr>
+          <tr><th scope="row">場所</th><td><span class="nw">八汐荘 屋良ホール</span><span class="nw">（那覇市松尾1丁目6-1）</span><small><a href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E6%B1%90%E8%8D%98" target="_blank" rel="noopener">地図を開く（Googleマップ）</a></small></td></tr>
+          <tr><th scope="row">定員</th><td>90名　※1社2名まで<small>定員に達し次第締め切らせていただきます</small></td></tr>
+          <tr><th scope="row">参加費</th><td>無料※</td></tr>
+          <tr><th scope="row">申込</th><td><span class="nw">事前にフォームで</span><span class="nw">お申込み</span><small>※お申込み締切 <span class="nw">11/11（水）まで</span></small></td></tr>
+        </table>
+
+        <h3 class="visually-hidden">スケジュール</h3>
+        <ul class="schedule-list">
+          <li><span class="part">第一部　14:00〜15:30</span><br><span class="what">青野 慶久氏 講演</span></li>
+          <li><span class="part">第二部　15:30〜16:00</span><br><span class="what">事業内容説明会</span></li>
+          <li><span class="part">第三部　16:00〜16:30</span><br><span class="what">企業登録会</span></li>
+        </ul>
+
+        <p class="invite-note">※令和8年度沖縄県ひとり親家庭等在宅就業推進事業にご賛同いただける企業様へのご招待です。<br>講演会終了後、沖縄県ひとり親家庭等在宅就業推進事業への企業登録をお願いいたします。</p>
+
+        <div class="speaker-box">
+          <img src="images/speaker-aono.jpg" alt="青野慶久氏">
+          <div>
+            <h3>青野 慶久（あおの よしひさ）</h3>
+            <p class="role">講師プロフィール／サイボウズ株式会社 社長</p>
+            <p class="profile">1971年生まれ。愛媛県今治市出身。大阪大学工学部情報システム工学科卒業後、松下電工（現パナソニック）を経て、1997年8月愛媛県松山市でサイボウズを設立。2005年4月代表取締役社長に就任。社内のワークスタイル変革を推進し、最高で28%あった離職率を大幅に低減するとともに、3児の父として3度の育児休暇を取得。また2011年から事業のクラウド化を進め、2024年時点でクラウド事業の売上が全体の90%を超えるまで成長。総務省、厚労省、経産省、内閣府、内閣官房の働き方変革プロジェクトの外部アドバイザーを歴任し、SAJ（一般社団法人ソフトウェア協会）の筆頭副会長を務める。</p>
+          </div>
+        </div>
+
+        <div class="center-cta" data-when="open">
+          <a class="btn-pink" href="https://forms.gle/MdEfVedjQGkj5YuMA" target="_blank" rel="noopener">講演会に申し込む</a>
+          <span class="deadline">お申込み締切　11/11（水）まで</span>
+        </div>
+        <div class="center-cta" data-when="closed" hidden>
+          <span class="closed-label">講演会のお申込み受付は終了しました</span>
+          <span class="deadline">企業登録に関するご相談は随時受け付けております（<a href="#company" style="color:var(--teal-700);">企業登録のご案内</a>）</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. 企業登録のご案内 ===== -->
+  <section id="company" class="company-section" aria-labelledby="company-title">
+    <div class="wrap">
+      <span class="eyebrow">FOR COMPANIES</span>
+      <h2 id="company-title" class="section-title"><span class="nw">ひとり親家庭等</span><span class="nw">在宅就業推進事業へ</span><span class="nw">登録していただける</span><span class="nw">企業を募集しています</span></h2>
+
+      <p class="company-lead"><span class="nw">令和8年度</span> <span class="nw">沖縄県ひとり親家庭等</span><span class="nw">在宅就業推進事業とは</span><br>沖縄県の<mark>ひとり親家庭の収入アップ</mark>を<mark>副業の形でサポート</mark>する事業です</p>
+      <p class="text-box">当事業へチャレンジしている参加者は、eラーニング学習やセミナー講習を通じ、スキル獲得・技術向上に努めつつ、登録企業様からのお仕事を経験し、実務を積むことで、自立した在宅ワーカーとなり、収入アップを目指しています。</p>
+
+      <div class="cycle-grid" data-reveal-group>
+        <div class="cycle-item">eラーニングでの<br>自宅学習</div>
+        <div class="cycle-plus" aria-hidden="true">＋</div>
+        <div class="cycle-item">ビジネススキルやAI活用など<br>スキルアップセミナー</div>
+        <div class="cycle-plus" aria-hidden="true">＋</div>
+        <div class="cycle-item">企業様からお仕事を受注、<br>自立に向けた一歩</div>
+      </div>
+      <p class="ask-text">社内にある在宅・PCでできる業務を切り分けいただき、当事業へ案件提供（業務委託）いただける企業様へご登録をお願いしております。</p>
+
+      <h3 class="sub-title">業務委託の流れ</h3>
+      <div class="flow-grid" data-reveal>
+        <div class="flow-node">ご登録企業</div>
+        <div class="flow-link">
+          <div class="lane go"><svg class="arw-v" viewBox="0 0 14 40" aria-hidden="true"><path d="M7 2v30" stroke="currentColor" stroke-width="2"/><path d="M1 28l6 9 6-9z" fill="currentColor"/></svg><span>秘密保持契約<br>業務委託契約<br>案件委託</span><svg class="arw-h" viewBox="0 0 130 14" aria-hidden="true"><path d="M2 7h120" stroke="currentColor" stroke-width="2"/><path d="M118 1l9 6-9 6z" fill="currentColor"/></svg></div>
+          <div class="lane back"><svg class="arw-h" viewBox="0 0 130 14" aria-hidden="true"><path d="M8 7h120" stroke="currentColor" stroke-width="2"/><path d="M12 1L3 7l9 6z" fill="currentColor"/></svg><svg class="arw-v" viewBox="0 0 14 40" aria-hidden="true"><path d="M7 8v30" stroke="currentColor" stroke-width="2"/><path d="M1 12l6-9 6 9z" fill="currentColor"/></svg><span>納品</span></div>
+        </div>
+        <div class="flow-node mid">受託事業者<small>株式会社<br>りゅうせきフロントライン</small><span class="inspect">検品</span></div>
+        <div class="flow-link">
+          <div class="lane go"><svg class="arw-v" viewBox="0 0 14 40" aria-hidden="true"><path d="M7 2v30" stroke="currentColor" stroke-width="2"/><path d="M1 28l6 9 6-9z" fill="currentColor"/></svg><span>秘密保持契約<br>業務委託契約<br>案件再委託<br>サポート体制の提供</span><svg class="arw-h" viewBox="0 0 130 14" aria-hidden="true"><path d="M2 7h120" stroke="currentColor" stroke-width="2"/><path d="M118 1l9 6-9 6z" fill="currentColor"/></svg></div>
+          <div class="lane back"><svg class="arw-h" viewBox="0 0 130 14" aria-hidden="true"><path d="M8 7h120" stroke="currentColor" stroke-width="2"/><path d="M12 1L3 7l9 6z" fill="currentColor"/></svg><svg class="arw-v" viewBox="0 0 14 40" aria-hidden="true"><path d="M7 8v30" stroke="currentColor" stroke-width="2"/><path d="M1 12l6-9 6 9z" fill="currentColor"/></svg><span>納品</span></div>
+        </div>
+        <div class="flow-node">事業参加者</div>
+      </div>
+      <p class="text-box">弊社が企業様と参加者の間に入り、企業様・事業参加者双方に安心して事業に取り組んでいただける環境作り、支援をしています。また秘密保持契約・業務委託契約を締結し、誠実に業務を履行いただく体制を整えます。加えて、逐次のサポート体制を通じて、クオリティコントロールを行います。</p>
+
+      <div class="period-box">
+        <span class="tag">案件受注期間</span>
+        <p style="margin:0;">案件の受注期間（実施）は、<strong>2026年10月〜2027年2月末まで</strong>、随時受け付けております。業務切り分けについても随時ご相談可能です。お気軽にお問い合わせください。</p>
+      </div>
+
+      <p class="merit-head">企業の皆様には業務削減とCSRを両立いただける事業です</p>
+      <p style="font-size:15px;">業務量の増加や残業発生の要因は様々。その中でも在宅・PCでできる業務を切り分けることで業務効率化、残業削減、ひいては余剰時間を生み出すことができます。また、県事業に参加いただくことで県民に対する企業認知を獲得することも期待できます。</p>
+
+      <ul class="task-grid" data-reveal-group>
+        <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg>Webリサーチ<br>リスト作成</li>
+        <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>音声起こし<br>文字起こし</li>
+        <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M10 6h4M9.5 12h5M9.5 15h3"/></svg>SNS素材作成<br>SNS広告運用</li>
+        <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M4 9h16M4 15h16M10 3v18"/></svg><span class="nw">Excelデータ</span><span class="nw">打ち込み</span><br>表作成・分析</li>
+        <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>想定営業先<br>リストアップ</li>
+        <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span class="nw">問い合わせ</span><span class="nw">フォーム作成、</span><br><span class="nw">結果集計・分析</span></li>
+        <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m10 9 5 3-5 3z"/></svg><span class="nw">AI活用</span><span class="nw">コンテンツ作成</span><br>動画編集</li>
+      </ul>
+      <p class="safe-text">弊社が納品クオリティを管理するため、安心してご活用ください！</p>
+
+      <div class="center-cta">
+        <a class="btn-primary" href="mailto:info@okinawa-zaitakuwork.com?subject=%E4%BC%81%E6%A5%AD%E7%99%BB%E9%8C%B2%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">企業登録についてお問い合わせ</a>
+        <span class="deadline">お問い合わせ　<span class="nw">info@okinawa-zaitakuwork.com</span> ／ <span class="nw">090-8290-3557（平日9:00〜17:00）</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. 事業について（プログラム概要） ===== -->
+  <section id="about" aria-labelledby="lead-title">
     <div class="wrap">
       <span class="eyebrow">ABOUT</span>
-      <h2 id="lead-title" class="section-title">こんなお悩み、ありませんか？</h2>
+      <h2 id="lead-title" class="section-title">事業について<span class="sub">在宅ワークチャレンジプログラム</span></h2>
+      <p class="ended-note">参加者の募集は2026年9月18日（金）をもって終了しました。現在、2027年2月26日（金）までの支援期間中です。</p>
       <div class="lead-grid" data-reveal>
         <div class="lead-text">
           <p>
@@ -495,38 +746,13 @@
       </div>
 
       <div class="income-blob" data-reveal>
-        <p class="figure">在宅ワークで<span>年間</span><span class="count-up" data-count-to="10">0</span>万円<span>以上の</span>収入を<span>目指そう！</span></p>
+        <p class="figure"><span class="nw" style="font-size:1em;">在宅ワークで</span><span class="nw" style="font-size:1em;"><span>年間</span><span class="count-up" data-count-to="10">10</span>万円<span>以上の</span></span><span class="nw" style="font-size:1em;">収入を<span>目指そう！</span></span></p>
       </div>
     </div>
   </section>
 
-  <!-- ===== 3. こんな方におすすめ ===== -->
-  <section aria-labelledby="who-title" style="padding-top:0;">
-    <div class="wrap">
-      <h2 id="who-title" class="section-title">こんなひとり親の方におすすめ！</h2>
-      <div class="check-grid" data-reveal-group>
-        <div class="check-card">
-          <span class="check-mark" aria-hidden="true">✓</span>
-          <p>生計にプラスとなる収入を在宅ワークで確保したい</p>
-        </div>
-        <div class="check-card">
-          <span class="check-mark" aria-hidden="true">✓</span>
-          <p>無理なダブルワークを解消したい</p>
-        </div>
-        <div class="check-card">
-          <span class="check-mark" aria-hidden="true">✓</span>
-          <p>得意なことや好きなことを仕事にしたい</p>
-        </div>
-        <div class="check-card">
-          <span class="check-mark" aria-hidden="true">✓</span>
-          <p>子どもと自宅で過ごす時間を増やしたい</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 4. 紹介動画 ===== -->
-  <section aria-labelledby="video-title">
+  <!-- ===== 紹介動画 ===== -->
+  <section aria-labelledby="video-title" style="padding-top:0;">
     <div class="wrap">
       <span class="eyebrow">MOVIE</span>
       <h2 id="video-title" class="section-title">プログラム紹介動画</h2>
@@ -540,7 +766,7 @@
     </div>
   </section>
 
-  <!-- ===== 5. 2本柱 ===== -->
+  <!-- ===== 2本柱 ===== -->
   <section aria-labelledby="pillar-title" style="padding-top:0;">
     <div class="wrap">
       <h2 id="pillar-title" class="section-title">プログラムの2本柱</h2>
@@ -563,29 +789,11 @@
     </div>
   </section>
 
-  <!-- ===== 6. 対象者・支援期間 ===== -->
-  <section aria-labelledby="target-title">
-    <div class="wrap">
-      <span class="eyebrow">TARGET</span>
-      <h2 id="target-title" class="section-title">対象者</h2>
-      <div class="target-box" data-reveal>
-        <h3>以下の条件に当てはまる方</h3>
-        <ol>
-          <li>沖縄県内在住（離島含む）のひとり親・寡婦・ひとり親家庭の児童（20歳未満）で、原則、ご自宅にインターネット環境とPCがある方</li>
-          <li>在宅ワークによって収入を得ようという意欲のある方（例えば、将来の教育費の支出に備えたい方等）</li>
-        </ol>
-        <p class="target-note">※既に在宅ワークをしていて収入をアップさせたい方も、これから在宅ワークをはじめたい方もぜひご応募ください。</p>
-        <div class="period-line">
-          支援期間　<strong>2026年10月3日（土）〜2027年2月26日（金）</strong>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== 7. プログラムの流れ ===== -->
+  <!-- ===== プログラムの流れ ===== -->
   <section aria-labelledby="flow-title" style="padding-top:0;">
     <div class="wrap">
       <h2 id="flow-title" class="section-title">プログラムの流れ</h2>
+      <p class="meta-row"><span><strong>支援期間</strong>　<span class="nw">2026年10月3日（土）〜</span><span class="nw">2027年2月26日（金）</span></span></p>
       <div class="timeline" data-reveal>
         <div class="tl-item">
           <span class="tl-num" aria-hidden="true">1</span>
@@ -616,62 +824,6 @@
     </div>
   </section>
 
-  <!-- ===== 8. 申込の流れ ===== -->
-  <section id="apply-flow" aria-labelledby="apply-title">
-    <div class="wrap">
-      <span class="eyebrow">HOW TO APPLY</span>
-      <h2 id="apply-title" class="section-title">申込の流れ</h2>
-
-      <div class="meta-row">
-        <span><strong>募集定員</strong>　30名</span>
-        <span><strong>募集締切</strong>　2026年9月18日（金）</span>
-      </div>
-
-      <div class="apply-grid" data-reveal-group>
-        <div class="apply-step">
-          <p class="n">01</p>
-          <h3>申込面談の予約</h3>
-          <p>希望する在宅ワークや持っているスキル等の確認のため、30分程度オンラインにて個別の面談を行います。</p>
-        </div>
-        <div class="apply-step">
-          <p class="n">02</p>
-          <h3>必要書類の提出</h3>
-          <p>面談終了者には事務局から提出書類をご案内いたします（提出書類は9/18(金)必着）。</p>
-        </div>
-        <div class="apply-step">
-          <p class="n">03</p>
-          <h3>選考</h3>
-          <p>全ての応募者について、面談結果及び提出書類を元に総合的に選考を行います（定員30名）。</p>
-        </div>
-        <div class="apply-step">
-          <p class="n">04</p>
-          <h3>選考結果</h3>
-          <p>メールと書面をもって個別に通知します（9月25日（金）予定）。</p>
-        </div>
-      </div>
-
-      <div style="text-align:center; margin-bottom:40px;">
-        <a class="btn-primary" href="https://forms.gle/Rr7BTu5ibqY3Eizy9" target="_blank" rel="noopener">
-          <!-- ▼ Googleフォームの実URLに差し替えてください -->
-          申込面談を予約する
-        </a>
-      </div>
-
-      <div class="briefing-box" data-reveal>
-        <h3>オンライン説明会も開催します</h3>
-        <p class="q">「やってみたいけど私で出来るか不安…」「離島からでも参加できるの？」など、詳しく知りたい方はこちら。</p>
-        <ul>
-          <li>① 2026年9月2日（水）19:00〜20:00</li>
-          <li>② 2026年9月8日（火）19:00〜20:00</li>
-        </ul>
-        <a href="https://forms.gle/Rr7BTu5ibqY3Eizy9" target="_blank" rel="noopener" style="color:var(--teal-700); font-weight:700; text-decoration:underline;">
-          <!-- ▼ 説明会申込フォームの実URLに差し替えてください -->
-          オンライン説明会に申し込む
-        </a>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <!-- ===== フッター／お問い合わせ ===== -->
@@ -684,7 +836,7 @@
     <dl class="contact-grid">
       <div>
         <dt>運営事務局</dt>
-        <dd>「沖縄県ひとり親家庭等在宅就業推進事業委託」運営事務局</dd>
+        <dd><span class="nw">「沖縄県ひとり親家庭等在宅就業推進事業委託」</span><span class="nw">運営事務局</span></dd>
         <dt>メール</dt>
         <dd><a href="mailto:info@okinawa-zaitakuwork.com">info@okinawa-zaitakuwork.com</a></dd>
         <dt>電話</dt>
@@ -692,9 +844,9 @@
       </div>
       <div>
         <dt>住所</dt>
-        <dd>沖縄県浦添市勢理客4-20-1（りゅうせきフロントライン内）</dd>
+        <dd><span class="nw">沖縄県浦添市勢理客4-20-1</span><span class="nw">（りゅうせきフロントライン内）</span></dd>
         <dt>主催／運営</dt>
-        <dd>主催：沖縄県　運営：株式会社りゅうせきフロントライン</dd>
+        <dd><span class="nw">主催：沖縄県</span>　<span class="nw">運営：株式会社りゅうせきフロントライン</span></dd>
         <div class="sns-row">
           <a href="https://www.instagram.com/okinawa_zaitakuwork?igsh=dzMyNmk2bmp2ZDNq" target="_blank" rel="noopener" aria-label="Instagram">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
@@ -716,13 +868,19 @@
 </footer>
 
 <div class="mobile-apply-bar">
-  <a href="https://forms.gle/Rr7BTu5ibqY3Eizy9" target="_blank" rel="noopener">
-    <!-- ▼ Googleフォームの実URLに差し替えてください -->
-    申込面談を予約する
-  </a>
+  <a href="https://forms.gle/MdEfVedjQGkj5YuMA" target="_blank" rel="noopener" data-when="open">講演会に申し込む</a>
+  <a href="#company" data-when="closed" hidden>企業登録のご案内</a>
 </div>
 
 <script>
+(function () {
+  // 講演会申込締切（2026/11/11 23:59 日本時間）を過ぎたら「受付終了」表示に自動で切り替え
+  var SEMINAR_CLOSE = new Date('2026-11-12T00:00:00+09:00');
+  var closed = new Date() >= SEMINAR_CLOSE;
+  document.querySelectorAll('[data-when]').forEach(function (el) {
+    el.hidden = (el.getAttribute('data-when') === 'closed') !== closed;
+  });
+})();
 (function () {
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -748,8 +906,10 @@
   }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(function (el) { io.observe(el); });
 
-  // Count-up number
+
+  // Count-up number（HTMLには最終値を記載し、アニメーション時のみ0から数え上げる）
   var counters = document.querySelectorAll('.count-up');
+  counters.forEach(function (el) { el.textContent = '0'; });
   var cio = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (!entry.isIntersecting) return;
