@@ -527,7 +527,7 @@
 
 <main id="main">
 
-  <!-- ===== 1. Hero（講演会受付中：〜11/11） ===== -->
+  <!-- ===== 1. Hero（講演会受付中：〜11/25） ===== -->
   <section class="hero">
     <div class="hero-blob b1" aria-hidden="true"></div>
     <div class="hero-blob b2" aria-hidden="true"></div>
@@ -535,7 +535,7 @@
     <div class="wrap hero-inner hero-flyer" data-when="open">
       <a class="flyer-frame" href="files/flyer-kigyou-seminar-2026.pdf" target="_blank" rel="noopener" data-reveal>
         <img src="images/flyer-seminar-1.jpg" width="1100" height="1556"
-             alt="チラシ：サイボウズ株式会社 社長 青野慶久氏 講演会「個人戦からチーム戦へ ～情報共有と『5つの文化』でつくる、多様な人材が活躍する組織～」。2026年11月26日（木）14:00〜17:00（13:30開場）、八汐荘 屋良ホール、定員90名、参加無料、お申込み締切11/11（水）。">
+             alt="チラシ：サイボウズ株式会社 社長 青野慶久氏 講演会「個人戦からチーム戦へ ～情報共有と『5つの文化』でつくる、多様な人材が活躍する組織～」。2026年11月26日（木）14:00〜17:00（13:30開場）、八汐荘 屋良ホール、定員90名、参加無料、お申込み締切11/25（水）（ご好評につき延長）。">
       </a>
       <div class="hero-text" data-reveal>
         <div class="hero-badges">
@@ -547,13 +547,13 @@
         <p class="hero-date"><span class="nw">2026年11月26日（木）</span><span class="nw">14:00〜17:00</span> <small class="nw">（13:30開場）</small><br><small>八汐荘 屋良ホール（那覇市松尾1丁目6-1）</small></p>
         <div class="hero-cta-row">
           <a class="btn-pink" href="https://forms.gle/MdEfVedjQGkj5YuMA" target="_blank" rel="noopener">講演会に申し込む</a>
-          <p class="hero-period">お申込み締切　<strong>11/11（水）まで</strong></p>
+          <p class="hero-period">お申込み締切　<strong>11/25（水）まで</strong><br><small>ご好評につき延長しました</small></p>
         </div>
         <p class="hero-links"><a href="#seminar">講演会の詳細を見る</a>　<a href="files/flyer-kigyou-seminar-2026.pdf" target="_blank" rel="noopener">チラシ（PDF）を開く</a></p>
       </div>
     </div>
 
-    <!-- ===== 1'. Hero（講演会受付終了後：11/12〜 自動切替） ===== -->
+    <!-- ===== 1'. Hero（講演会受付終了後：11/26〜 自動切替） ===== -->
     <div class="wrap hero-inner hero-flyer" data-when="closed" hidden>
       <a class="flyer-frame" href="files/flyer-kigyou-seminar-2026.pdf" target="_blank" rel="noopener" data-reveal>
         <img src="images/flyer-seminar-2.jpg" width="1100" height="1556"
@@ -625,7 +625,7 @@
           <tr><th scope="row">場所</th><td><span class="nw">八汐荘 屋良ホール</span><span class="nw">（那覇市松尾1丁目6-1）</span><small><a href="https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E6%B1%90%E8%8D%98" target="_blank" rel="noopener">地図を開く（Googleマップ）</a></small></td></tr>
           <tr><th scope="row">定員</th><td>90名　※1社2名まで<small>定員に達し次第締め切らせていただきます</small></td></tr>
           <tr><th scope="row">参加費</th><td>無料※</td></tr>
-          <tr><th scope="row">申込</th><td><span class="nw">事前にフォームで</span><span class="nw">お申込み</span><small>※お申込み締切 <span class="nw">11/11（水）まで</span></small></td></tr>
+          <tr><th scope="row">申込</th><td><span class="nw">事前にフォームで</span><span class="nw">お申込み</span><small>※お申込み締切 <span class="nw">11/25（水）まで</span>（ご好評につき延長しました）</small></td></tr>
         </table>
 
         <h3 class="visually-hidden">スケジュール</h3>
@@ -648,7 +648,7 @@
 
         <div class="center-cta" data-when="open">
           <a class="btn-pink" href="https://forms.gle/MdEfVedjQGkj5YuMA" target="_blank" rel="noopener">講演会に申し込む</a>
-          <span class="deadline">お申込み締切　11/11（水）まで</span>
+          <span class="deadline">お申込み締切　11/25（水）まで</span>
         </div>
         <div class="center-cta" data-when="closed" hidden>
           <span class="closed-label">講演会のお申込み受付は終了しました</span>
@@ -874,8 +874,8 @@
 
 <script>
 (function () {
-  // 講演会申込締切（2026/11/11 23:59 日本時間）を過ぎたら「受付終了」表示に自動で切り替え
-  var SEMINAR_CLOSE = new Date('2026-11-12T00:00:00+09:00');
+  // 講演会申込締切（2026/11/25 23:59 日本時間）を過ぎたら「受付終了」表示に自動で切り替え
+  var SEMINAR_CLOSE = new Date('2026-11-26T00:00:00+09:00');
   var closed = new Date() >= SEMINAR_CLOSE;
   document.querySelectorAll('[data-when]').forEach(function (el) {
     el.hidden = (el.getAttribute('data-when') === 'closed') !== closed;
